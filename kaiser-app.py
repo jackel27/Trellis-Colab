@@ -1,5 +1,5 @@
 """
-app.py
+kaiser-app.py
 Refined TRELLIS-based 3D Generation Interface
 
 Author: Microsoft TRELLIS team & Contributors
