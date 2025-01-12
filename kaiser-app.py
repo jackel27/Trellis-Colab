@@ -5,9 +5,11 @@ Refined TRELLIS-based 3D Generation Interface
 Author: Microsoft TRELLIS team & Contributors
 Colab Setup & Notebook by: David Kaiser (https://github.com/jackel27/Trellis-Colab)
 
-This script creates a Gradio Blocks interface (with a Dracula dark theme) for single- or multi-image
-conversion into 3D assets (Gaussian + Mesh). It uses the TRELLIS pipeline, plus includes a real-time
-video preview and GLB/Gaussian export functionality.
+This script creates a Gradio Blocks interface for single- or multi-image
+conversion into 3D assets (Gaussian + Mesh). It uses the TRELLIS pipeline,
+plus includes a real-time video preview and GLB/Gaussian export functionality.
+
+Run in a conda environment named "trellis" or adapt as needed.
 """
 
 import gradio as gr
@@ -279,13 +281,12 @@ def split_image(image: Image.Image) -> List[Image.Image]:
 # ======================================
 def build_interface():
     """
-    Construct and return the Gradio Blocks interface (dark theme).
-    Includes tabs for single vs. multi-image, generation settings,
-    and extraction of GLB/Gaussian.
+    Construct and return the Gradio Blocks interface.
+    Replaced 'Dracula' with 'themes.Soft()' to avoid the attribute error.
     """
     with gr.Blocks(
         title="TRELLIS: Image to 3D",
-        theme=themes.Dracula(),
+        theme=themes.Soft(),   # Instead of themes.Dracula()
         css=None,
         analytics_enabled=False
     ) as demo:
