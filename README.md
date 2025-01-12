@@ -1,6 +1,6 @@
 # TRELLIS Colab Setup
 ---
-
+Trellis colab notebook. jupyter. whatever. working setup!
 This README details the environment setup, package versions, and steps used to run the [Microsoft TRELLIS](https://github.com/microsoft/TRELLIS) project, along with the [mip-splatting](https://github.com/autonomousvision/mip-splatting) submodules, **FlashAttention** (2.5.8), **spconv**, and **Kaolin** (0.17.0). Everything is pinned to **CUDA 11.8** and **PyTorch 2.3.0** for reproducibility.
 
 ### If you are looking for just the Google Colab - go here: [Kaiser-Trellis.ipynb](https://github.com/jackel27/Trellis-Colab/edit/main/Kaiser-Trellis.ipynb)
